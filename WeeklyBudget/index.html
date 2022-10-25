@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weekly Budget</title>
+</head>
+
+<body>
+
+    <div class="container-budget">
+        <div class="budget-add">
+            <div id="budget-form" class="budget-form">
+                <h1 class="budget-title">Enter your weekly budget</h1>
+                <input type="number" class="budget-input" placeholder="0, $">
+                <button class="btn-budget">Calculate</button>
+            </div>
+        </div>
+        <div class="expense-add">
+            <div id="expense-form" class="expense-form">
+                <h1 class="expense-title">Add your purchase</h1>
+                <input type="text" class="expense-input__name expense-input" placeholder="Expense title">
+                <input type="number" class="expense-input__value purchase-price" placeholder="Expense value, $">
+                <button class="add-btn btn-expense">Add expense</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-calculations">
+        <div class="budget">
+            <h2>Budget</h2>
+            <i class="fa-solid fa-money-bill-1-wave" style="color:rgb(7, 116, 7) ;"></i>
+            <div class="budget-value">
+                <!-- <p  class="budget-value">$ 1500</p> -->
+            </div>
+        </div>
+        <div class="expense">
+            <h2>Expenses</h2>
+            <i class="fa-sharp fa-solid fa-credit-card" style="color:rgb(104, 110, 151);"></i>
+            <div class="expense-value">
+                <!-- <p class="expense-value">$ 0</p> -->
+            </div>
+        </div>
+        <div class="balance">
+            <h2>Balance</h2>
+            <i class="fa-solid fa-sack-dollar" style="color:rgb(156, 156, 32);"></i>
+            <div class="balance-value">
+                <!-- <p class="balance-value">$ 1500</p> -->
+            </div>
+        </div>
+        <div class="expense-list">
+            <!-- <div class="item completed">
+                <span>Expense title,</span>
+                <span>Expense value $</span>
+                <div class="item-btn">
+                    <i class="fa-sharp fa-solid fa-pencil"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div> -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

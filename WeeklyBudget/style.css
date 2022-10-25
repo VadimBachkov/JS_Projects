@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Budget container start*/
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    padding: 40px 40px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(70, 64, 55);
+}
+
+.container-budget {
+    width: 500px;
+}
+
+.container-budget,
+.budget-form,
+.expense-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.budget-add,
+.expense-add {
+    border: 0.05rem solid rgb(11, 26, 81);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.budget-input,
+.expense-input__name,
+.expense-input__value {
+    padding: 5px;
+}
+
+.btn-budget,
+.btn-expense {
+    padding: 5px;
+    width: auto;
+}
+
+.btn-budget {
+    color: rgb(83, 138, 1);
+}
+
+.btn-expense {
+    color: rgb(180, 11, 11);
+}
+
+.container-calculations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    width: 600px;
+}
+
+.budget,
+.expense,
+.balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-money-bill-1-wave,
+.fa-credit-card,
+.fa-sack-dollar {
+    padding: 40px;
+    font-size: 50px;
+}
+
+.item {
+    display: flex;
+    gap: 20px;
+    margin-left: 40px;
+
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.budget-value,.expense-value,.balance-value{
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+}
+
+.fa-pencil,
+.fa-xmark {
+    padding-right: 10px;
+}
