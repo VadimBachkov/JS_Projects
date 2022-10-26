@@ -45,7 +45,10 @@ body {
     font-size: 0.9rem;
   }
   
-  /* .add-list {
+  .showUser {
+    display: flex;
+ 
+    padding: 10px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -56,26 +59,11 @@ body {
     opacity: .6;
     pointer-events: none;
   }
-  
-  .add-list.active {
-    opacity: 1;
-    pointer-events: all;
-  } */
-
-  .showUser {
-    padding: 15px;
-    background-color: #6b6b6b;
-    -webkit-box-shadow: 1px 1px 2px lightgrey;
-            box-shadow: 1px 1px 2px lightgrey;
-    text-align: center;
-    width: auto;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  li span{
+    color: #ccc;
   }
   
-  .showUser .userPhoto {
+  /* .showUser .userPhoto {
     margin: 0 auto;
   }
   
@@ -91,9 +79,5 @@ body {
   .showUser .userInfo ul li {
     list-style-type: none;
     margin-top: 10px;
-  }
+  } */
   
-  span {
-    color: #222222;
-    font-weight: bold;
-  }
