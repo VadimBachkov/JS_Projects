@@ -38,46 +38,34 @@ body {
 }
 
 .entered-field {
-    width: 410px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 0.9rem;
-  }
-  
-  .showUser {
-    display: flex;
- 
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background-color: rgb(8, 6, 133);
-    font-size: 0.9rem;
-    color: #ccc;
-    cursor: pointer;
-    opacity: .6;
-    pointer-events: none;
-  }
-  li span{
-    color: #ccc;
-  }
-  
-  /* .showUser .userPhoto {
-    margin: 0 auto;
-  }
-  
-  .showUser .userPhoto img {
-    border-radius: 50%;
-    width: 225px;
-  }
-  
-  .showUser .userInfo {
-    margin-left: 2rem;
-  }
-  
-  .showUser .userInfo ul li {
-    list-style-type: none;
-    margin-top: 10px;
-  } */
-  
+  width: 410px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.showUser {
+  display: flex;
+
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(8, 6, 133);
+  font-size: 0.9rem;
+  color: #ccc;
+  cursor: pointer;
+  opacity: .6;
+  pointer-events: none;
+}
+
+li {
+  color: #ccc;
+  list-style-type: none;
+}
+
+.showUser .userPhoto img {
+  border-radius: 50%;
+  width: 225px;
+}

@@ -1,39 +1,42 @@
 const userName = document.querySelector(".entered-field");
 const userContainer = document.querySelector(".showUser");
 
+async function showAvatar() {
+  let githubResponse = await fetch(`https://api.github.com/users/${userName.value}`);
+  let githubUser = await githubResponse.json();
+  userContainer.style.display = "block";
+  createInfo(githubUser);
+  return githubUser;
+}
 
-function createInfo(data) {
+
+function createInfo(githubUser) {
   userContainer.style.display = "block";
 
+  let userPhoto = document.querySelector(".userPhoto");
   let userInfo = document.querySelector("#userInfo");
 
-  userInfo.innerHTML = `<li><span>Name:</span> ${data.name}</li>`
-}
+  userPhoto.innerHTML = `<img Photo: src=${githubUser.avatar_url}>`;
+  userInfo.innerHTML = `
+            <li>Name: ${githubUser.name}</li>
+            <li>Bio: ${githubUser.bio}</li>
+            <li>Location: ${githubUser.location}</li>
+            <li>Company: ${githubUser.company}</li>
+            <li>Followers: ${githubUser.followers}</li>
+           `
+};
 
-class GitHub {
-
-  async getUser(user) {
-    const profileResponse = await fetch(
-      `https://api.github.com/users/${user}`
-    );
-    const profileData = await profileResponse.json();
-    return {
-      profile: profileData,
-    };
-  }
-}
-
-let user = new GitHub();
 
 userName.addEventListener("keyup", () => {
-  currentUser = user.getUser(event.target.value);
-  if (currentUser) {
-    currentUser.then((data) => {
-      if (data.profile.message == "Not Found") {
-        console.log(`User - ${searchText} Not Found`);
-      } else {
-        createInfo(data.profile);
-      }
-    });
+  if(userName.value == ""){
+    userContainer.style.display="none";
+  }else{
+    showAvatar();
   }
-});
+})
+
+
+
+
+
+
