@@ -5,6 +5,7 @@ async function showAvatar() {
   let githubResponse = await fetch(`https://api.github.com/users/${userName.value}`);
   let githubUser = await githubResponse.json();
   userContainer.style.display = "block";
+  
   createInfo(githubUser);
   return githubUser;
 }
@@ -28,7 +29,7 @@ function createInfo(githubUser) {
 
 
 userName.addEventListener("keyup", () => {
-  if(userName.value == ""){
+  if(userName.value == "") {
     userContainer.style.display="none";
   }else{
     showAvatar();
