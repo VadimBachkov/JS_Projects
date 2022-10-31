@@ -9,6 +9,7 @@ async function showAvatar() {
   createInfo(githubUser);
   return githubUser;
 }
+a
 
 
 function createInfo(githubUser) {
