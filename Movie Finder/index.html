@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <link rel = "stylesheet" href = "./style.css">
+</head>
+<body>
+    
+    <div class = "wrapper">
+        <div class = "logo">
+            <div class = "container">
+                <p>Movie</p>
+            </div>
+        </div>
+        
+        <div class = "search-container">
+            <div class = "search-element">
+                <h3>Search Movie:</h3>
+                <input type = "text" class = "input-field" placeholder="Enter movie title ..." id = "input-field" onkeyup="findMovies()" onclick = "findMovies()">
+
+                <div class = "search-list" id = "search-list">
+                    <!-- <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "medium-cover.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-movie" id = "result-movie">
+                    <!-- <div class = "movie-poster">
+                        <img src = "" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title"></h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year"></li>
+                            <li class = "rated"></li>
+                            <li class = "released"></li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b></p>
+                        <p class = "writer"><b>Writer:</b></p>
+                        <p class = "actors"><b>Actors: </b></p>
+                        <p class = "plot"><b>Plot:</b></p>
+                        <p class = "language"><b>Language:</b></p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b></p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src = "./script.js"></script>
+</body>
+</html>
