@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root{
-    --md-dark-color: #1d1d1d;
-    --dark-color: #171717;
-    --light-dark-color: #292929;
+    --md-dark-color: rgba(57, 38, 143, 0.96);
+    --dark-color: rgba(57, 38, 143, 0.96);
+    --light-dark-color: rgba(21, 10, 68, 0.96);
     --yellow-color: #d4aa11;
 }
 *{
