@@ -37,7 +37,7 @@ function displayMovieList(movies){
             moviePoster = ".//img/image_not_found.png";
 
         movieListItem.innerHTML = `
-        <div class = "search-item-thumbnail">
+        <div class = "search-item">
             <img src = "${moviePoster}">
         </div>
         <div class = "search-item-info">
